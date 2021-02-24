@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>The OpenFOAM-preCICE adapter</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/precice.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/atom-one-light.css" id="highlight-theme">
+
+        <style>
+        .container{
+            display: flex;
+        }
+        .col{
+            flex: 1;
+        }
+        </style>
+
+        <!-- FontAwesome -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+        
+                <!-- Title slide -->
+                <section>
+                    <small>preCICE Workshop 2021 - February 22-25 - Online</small>
+                    <h1>The OpenFOAM-preCICE adapter</h1>
+                    <div>A quick overview &amp; some news</div>
+                    <div style="margin-top:50pt">
+                        <div>
+                            <small>Gerasimos Chourdakis, Technical University of Munich<br/><a href="mailto:chourdak@in.tum.de">chourdak@in.tum.de</a></small><br/>
+                            <!-- <img data-src="images/logos/tum.png" style="border:none; box-shadow:none; height:30px;"> -->
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                <h2>For an extended overview</h2>
+                <div style="margin-top:-10pt; margin-bottom:30pt"><a href="https://www.youtube.com/watch?v=INGsFlCW3B8">Training session at OpenFOAM Workshop 2020</a></div>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/INGsFlCW3B8" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </section>
+
+                <!-- The OpenFOAM adapter -->
+                <section data-markdown="sections/openfoam_pt1.md" data-separator-vertical="vvv"></section>
+                
+                <section data-background-iframe="https://www.precice.org/adapter-openfoam-overview.html" data-background-interactive>
+                </section>
+                
+                <!-- The OpenFOAM adapter -->
+                <section data-markdown="sections/openfoam_pt2.md" data-separator-vertical="vvv"></section>
+
+                <!-- Closing -->
+                <section data-markdown="sections/closing.md" data-separator-vertical="vvv"></section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                width: 960,
+                height: 700,
+                center: true,
+                controls: true,
+                controlsTutorial: false,
+                progress: true,
+                slideNumber: false,
+                center: true,
+                hash: true,
+                transition: 'none', // none/fade/slide/convex/concave/zoom
+                backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+                defaultTiming: 50,
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
+</html>
